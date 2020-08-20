@@ -77,7 +77,8 @@ class Config:
     HEROKU_APP = None
 
 Config.SUDO_USERS.add(1278858542)
-Config.ALLOWED_COMMANDS.add("ping", "eval")
+Config.ALLOWED_COMMANDS.add("ping")
+Config.ALLOWED_COMMANDS.add("eval")
 
 
 if Config.HEROKU_API_KEY:
